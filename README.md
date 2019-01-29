@@ -260,3 +260,8 @@ Go to the project on the Developer Console, and navigate to `APIs & Auth > Crede
 - Populate the PostgreSQL database with $ python db_seed.py
 - Restart Apache to launch the app: `$ sudo service apache2 restart`
 - If an internal error shows up when you try to access the app, open Apache error log as a reference for debugging: `$ sudo tail -20 /var/log/apache2/error.log`
+
+References and Acknowledgements:
+Thanks to @boisalai and @golgtwins for a fantastic documentation. Your materail was very useful for the submission of this project.
+https://libraries.io/github/golgtwins/Udacity-P7-Linux-Server-Configuration
+https://github.com/boisalai/udacity-linux-server-configuration
