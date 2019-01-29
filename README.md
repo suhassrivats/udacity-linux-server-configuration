@@ -146,9 +146,9 @@ run `sudo -l` and enter the password again. The output should be like this:
 
 - On the local machine:
   - Run `ssh-keygen`
-  - Enter file in which to save the key (I gave the name `grader_key`) in the local directory `~/.ssh`
-  - Enter in a passphrase twice. Two files will be generated (  `~/.ssh/grader_key` and `~/.ssh/grader_key.pub`)
-  - Run `cat ~/.ssh/grader_key.pub` and copy the contents of the file
+  - Enter file in which to save the key (I gave the name `udacity_key`) in the local directory `~/.ssh`
+  - Enter in a passphrase twice. Two files will be generated (  `~/.ssh/udacity_key` and `~/.ssh/udacity_key.pub`)
+  - Run `cat ~/.ssh/udacity_key.pub` and copy the contents of the file
   - Log in to the grader's virtual machine
 - On the grader's virtual machine:
   - Create a new directory called `~/.ssh` (`mkdir .ssh`)
@@ -156,7 +156,7 @@ run `sudo -l` and enter the password again. The output should be like this:
   - Give the permissions: `chmod 700 .ssh` and `chmod 644 .ssh/authorized_keys`
   - Check in `/etc/ssh/sshd_config` file if `PasswordAuthentication` is set to `no`
   - Restart SSH: `sudo service ssh restart`
-- On the local machine, run: `ssh -i ~/.ssh/grader_key -p 2200 grader@52.39.68.54`.
+- On the local machine, run: `ssh -i ~/.ssh/udacity_key grader@52.39.68.54 -p 2200`.
 
 **References**
 - DigitalOcean, [How To Set Up SSH Keys](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2).
